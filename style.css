@@ -1,0 +1,11 @@
+/* Strip out layout limits so both windows can shrink past standard restrictions */
+html, body, #main, .Root, #detached-window-container {
+    min-width: 0px !important;
+    min-height: 0px !important;
+    overflow: auto !important;
+}
+
+/* Make sure scrollbars don't look ugly when resized ultra-small */
+::-webkit-scrollbar {
+    display: none !important;
+}

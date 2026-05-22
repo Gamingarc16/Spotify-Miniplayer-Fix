@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Spotify Miniplayer Resizer Fix",
+  "version": "4.1",
+  "description": "Bypasses resizing restrictions on Spotify safely.",
+  "permissions": [
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ]
+}
